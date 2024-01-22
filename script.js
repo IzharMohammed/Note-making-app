@@ -8,9 +8,13 @@ function NotecreationDom(input) {
     info.classList.add('info')
     button.classList.add('btn2')
 
+  const btnId = 'btn2-' + Date.now();
+    button.setAttribute('id', btnId);
+
     heading.textContent = "Note"
     button.textContent = "view detail"
-    info.textContent = input.value.substring(0, 60) + '...';
+ const fullinfo = input.value
+    info.textContent = input.value.substring(0, 35) + '...';
 
     oneNote.appendChild(heading)
     oneNote.appendChild(info)
@@ -20,9 +24,17 @@ function NotecreationDom(input) {
 
     container.append(oneNote)
 
-    console.log('inside');
 
 
+
+
+
+    const detailsbtn = document.getElementById(btnId)
+detailsbtn.addEventListener("click", (e)=>{
+    e.preventDefault()
+ showDetails('Note', fullinfo )
+}
+)
 }
 // NotecreationDom()
 
@@ -37,13 +49,13 @@ savebtn.addEventListener("click", () => {
     input.value = ''
 })
 
-const detailsbtn = document.getElementById('btn2')
-detailsbtn.addEventListener("click", () => {
-    document.body.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
-
-
-
-
-
-
-})
+function showDetails(heading,information){
+    const info = document.getElementById('content').innerText=information;
+    const title = document.getElementById('popup-title').innerText=heading;
+    const dispay = document.getElementById('popup').style.display='block'
+    const closebtn = document.getElementById('closebtn')
+    closebtn.addEventListener('click',()=>{
+        document.getElementById('popup').style.display='none'
+    })
+console.log(information)
+}

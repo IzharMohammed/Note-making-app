@@ -59,7 +59,7 @@ transition: 0.4s;
     display: flex;
     flex-direction: column;
     gap: 26px;
-
+    /* overflow: hidden; */
 }
 .oneNote> div:first-child{
     font-size: 2rem;
@@ -94,4 +94,37 @@ transform: translateX(4px);
   gap: 136px;
   margin-left: 260px;
   flex-wrap: wrap;
+}
+.popup{
+   display: none; 
+  border: 2px solid;
+  padding: 34px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 95%;
+  height: 95%;
+}
+.popup-content{
+  position: relative;
+    left: 13%;
+    top: 30%;
+  background: #fff;
+  width: 74%;
+  padding: 38px;
+  border-radius: 35px;
+}
+h3 {
+  padding-left: 27px;
+  font-size: 31px;
+}
+
+.content {
+  padding: 12px;
+  font-size: 22px;
+}
+.closebtn{
+  margin-left: 67rem;
+  cursor: pointer;
 }
