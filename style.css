@@ -1,102 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito&family=Nunito+Sans:opsz@6..12&family=Ubuntu&display=swap');
-*{
-    font-family: 'Balsamiq Sans', sans-serif;
+
+* {
+  font-family: 'Balsamiq Sans', sans-serif;
 }
+
 :root {
-    --blue-gray: #ecf0f1;
-    --pale-blue: #2c3e50;
-    --mid-gray: #999;
-    --jean-blue: #3b5875;
-    --light-blue: #95afc0;
-    --sky-blue: #dff9fb;
-    --dark-sky-blue: #c7ecee;
-    --light-gray: #ccc;
-  }
-h1{
-    text-align: center;
-    font-size: 50px;
+  --blue-gray: #ecf0f1;
+  --pale-blue: #2c3e50;
+  --mid-gray: #999;
+  --jean-blue: #3b5875;
+  --light-blue: #95afc0;
+  --sky-blue: #dff9fb;
+  --dark-sky-blue: #c7ecee;
+  --light-gray: #ccc;
 }
-h2{
-    text-align: center;
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
   font-size: 37px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: green;
 }
-.input{
-    font-size: 21px;
-    padding: 23px 27px;
-    width: 75%;
-    margin-left: 28px;
-    outline: none;
-    border-radius: 10px;
+
+.input {
+  font-size: 21px;
+  padding: 23px 27px;
+  width: 75%;
+  margin-left: 28px;
+  outline: none;
+  border-radius: 10px;
 }
-span{
-    font-size: 1.7rem;
+
+span {
+  font-size: 1.7rem;
   font-weight: bold;
   margin-left: 131px;
 }
-.btn1{
-    font-size: 18px;
-    letter-spacing: 2px;
-    padding: 10px 14px;
-    background-color: greenyellow;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
-    margin-left: 44rem;
-    margin-top: 3rem;
-transition: 0.4s;
-}
-.btn1:hover{
-    box-shadow: 0px 0px 0px ;
-    transform: translateX(8px);
-}
-.oneNote{
-    border: 1px solid var(--light-gray);
-  box-shadow: 0px 1px 5px var(--mid-gray);
-    width: 32%;
-    padding: 45px;
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    /* overflow: hidden; */
-}
-.oneNote> div:first-child{
-    font-size: 2rem;
-    font-weight: bold;
+
+.btn1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 10px 14px;
+  background-color: greenyellow;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  margin-left: 44rem;
+  margin-top: 3rem;
+  transition: 0.4s;
 }
 
-.info
-{
+.btn1:hover {
+  box-shadow: 0px 0px 0px;
+  transform: translateX(8px);
+}
+
+.oneNote {
+  border: 1px solid var(--light-gray);
+  box-shadow: 0px 1px 5px var(--mid-gray);
+  width: 32%;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  /* overflow: hidden; */
+}
+
+.oneNote>div:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info {
   letter-spacing: 1px;
   font-family: 'Balsamiq Sans', sans-serif;
 }
-.btn2{
-    max-width: 29%;
-    /* padding: 6px 0px; */
-    background-color: blanchedalmond;
-    font-size: 17px;
+
+.btn2 {
+  max-width: 29%;
+  /* padding: 6px 0px; */
+  background-color: blanchedalmond;
+  font-size: 17px;
   padding: 8px;
   border-radius: 6px;
   box-shadow: 2px 2px 5px;
   transition: 0.4s;
 }
-.btn2:hover{
-box-shadow: 0px 0px 0px;
-transform: translateX(4px);
+
+.btn2:hover {
+  box-shadow: 0px 0px 0px;
+  transform: translateX(4px);
 }
-.container
-{
+
+.container {
   display: flex;
   flex-direction: row;
   margin: 85px;
-    margin-left: 85px;
+  margin-left: 85px;
   gap: 136px;
   margin-left: 260px;
   flex-wrap: wrap;
 }
-.popup{
-   display: none; 
+
+.popup {
+  display: none;
   border: 2px solid;
   padding: 34px;
   position: fixed;
@@ -106,15 +118,17 @@ transform: translateX(4px);
   width: 95%;
   height: 95%;
 }
-.popup-content{
+
+.popup-content {
   position: relative;
-    left: 13%;
-    top: 30%;
+  left: 13%;
+  top: 30%;
   background: #fff;
   width: 74%;
   padding: 38px;
   border-radius: 35px;
 }
+
 h3 {
   padding-left: 27px;
   font-size: 31px;
@@ -124,7 +138,8 @@ h3 {
   padding: 12px;
   font-size: 22px;
 }
-.closebtn{
+
+.closebtn {
   margin-left: 67rem;
   cursor: pointer;
 }
